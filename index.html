@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi CRUD Mahasiswa</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body  style="color: white; background-color: #1d2630;">
+    <div class="container">
+        <h1 class="mt-5">Data Mahasiswa</h1>
+        <button class="btn btn-primary mb-3" onclick="getAllStudents()">Tampilkan Semua Mahasiswa</button>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Tambah Mahasiswa Baru</h2>
+                <form id="addStudentForm">
+                    <div class="form-group">
+                        <label for="name">Nama:</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Email:</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Usia:</label>
+                        <input type="number" class="form-control" id="age" required>
+                    </div>
+                    <button type="submit" class="btn btn-success">Tambah Mahasiswa</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h2>Update Mahasiswa</h2>
+                <form id="updateStudentForm">
+                    <div class="form-group">
+                        <label for="updateId">ID Mahasiswa:</label>
+                        <input type="number" class="form-control" id="updateId" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="updateName">Nama Baru:</label>
+                        <input type="text" class="form-control" id="updateName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="updateName">Email Baru:</label>
+                        <input type="email" class="form-control" id="updateEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="updateAge">Usia Baru:</label>
+                        <input type="number" class="form-control" id="updateAge" required>
+                    </div>
+                    <button type="submit" class="btn btn-warning">Update Mahasiswa</button>
+                </form>
+
+                <h2>Hapus Mahasiswa</h2>
+                <form id="deleteStudentForm">
+                    <div class="form-group">
+                        <label for="deleteId">ID Mahasiswa:</label>
+                        <input type="number" class="form-control" id="deleteId" required>
+                    </div>
+                    <button type="submit" class="btn btn-danger">Hapus Mahasiswa</button>
+                </form>
+            </div>
+        </div>
+
+        <h2 class="mt-4">Data Mahasiswa</h2>
+        <div id="studentData" class="mt-3"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

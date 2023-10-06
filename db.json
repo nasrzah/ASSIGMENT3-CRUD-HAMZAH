@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "name": "HAMZAH NASRULLOH",
+      "email": "nasrullohhamzah@gmail.com",
+      "age": "22",
+      "id": 1
+    },
+    {
+      "name": "Calvin Surya Putra",
+      "email": "hnasrulloh94@gmail.com",
+      "age": "20",
+      "id": 2
+    },
+    {
+      "name": "Erlina Juniantari",
+      "email": "erlinajuniantari34@gmail.com",
+      "age": "20",
+      "id": 3
+    },
+    {
+      "name": "Sedri Sella Jumeni",
+      "email": "sedrisella@gmail.com",
+      "age": "20",
+      "id": 4
+    }
+  ]
+}
